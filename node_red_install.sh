@@ -18,7 +18,7 @@ fi
 if ! command -v node-red &> /dev/null; then
     echo "Installing node red..."
     # 使用npm命令来安装node red，并参考官方的文档来解决权限或者编译的问题
-    sudo npm install -g --unsafe-perm --production node-red
+    sudo npm install --unsafe-perm --production node-red
 fi
 
 # 使用systemd来管理node red的服务
