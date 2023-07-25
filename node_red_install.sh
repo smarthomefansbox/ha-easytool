@@ -30,8 +30,8 @@ Description=Node-RED
 After=syslog.target network.target
 
 [Service]
-ExecStart=/usr/bin/env node-red --max-old-space-size=1024 -v
-WorkingDirectory=/root/.node-red
+ExecStart=/usr/local/bin env node-red-pi --max-old-space-size=1024 -v
+WorkingDirectory=/usr/local/lib/node_modules/node-red
 User=root
 Group=root
 
