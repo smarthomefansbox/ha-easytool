@@ -24,6 +24,7 @@ echo "正在安装ntp服务器并同步上海时区的信息..."
 if ! command -v ntpd &> /dev/null; then 
     apt-get update 
     apt-get install -y ntp 
+    apt install -y sntp
 fi
 
 # 配置ntp服务器，使用上海时区的NTP服务器，并设置开机自启动ntp服务。
