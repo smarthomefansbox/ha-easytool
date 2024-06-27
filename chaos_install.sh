@@ -81,7 +81,7 @@ echo "正在配置Docker镜像加速器..."
 mkdir -p /etc/docker
 tee /etc/docker/daemon.json <<-'EOF'
 {
-  "registry-mirrors": ["https://docker.mirrors.ustc.edu.cn", "https://hub-mirror.c.163.com"]
+  "registry-mirrors": ["https://docker.m.daocloud.io"]
 }
 EOF
 
